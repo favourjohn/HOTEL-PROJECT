@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+  margin: 0;
+  background-color: #333;
+}
+h3{
+color: white;
+}
+.contact{
+  background-color: rgb(155, 195, 211);
+  height: 40px;
+  width: 100%;
+  padding: 15px;
+}
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 60px;
+  padding-left: 30px;
+}
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+}
+.topnav a:hover {
+  background-color:rgb(155, 195, 211);
+  color: black;
+}
+.icon{
+    float: right;
+}
+  h1{
+      margin: 30px;
+      font-size: 28px;
+  }
+  .column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+    height: 400px;
+    margin-left: 30px;
+  }
+  .col1{
+      height: 200px;
+      width: 150px;
+  }
+  .col2{
+      height: 200px;
+      width: 150px;
+  }
+  .col3{
+      height: 200px;
+      width: 150px;
+  }
+  .col4{
+      height: 200px;
+      width: 150px;
+  }
+  .book{
+    border: 3px solid white;
+    margin-left: 20px;
+    width: 8%;
+    padding: 5px;
+  }
+  .book:hover {
+    background-color: rgb(155, 195, 211);;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .rooms{
+    padding-top: 70px;
+    color: #f2f2f2;
+
+  }
+  
+  h6{
+      font-size: large;
+      margin-top: 0px;
+      text-align: center;
+  }
+  .checked{
+      color: orange;
+  }
+  
+   /* (A) GRID CONTAINER */
+#grid-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* NOTE: ROW 3 ONWARDS WILL BE AUTO HEIGHT */
+  grid-template-rows: 100px 100px 100px;
+  
+  /* SAME AS COLUMNS, WE CAN USE REPEAT AS WELL
+  grid-template-rows: repeat(4, 50px); */
+  }
+  
+  /* (B) GRID CELLS */
+  div.cell {
+  padding: 8px;
+  margin: 10px;
+  width: 40%;
+  height: 300%;
+  }
+  h2{
+  font-size: 15px;
+  }
+  .footer{
+  background-color: #333;
+  color: white;
+  height: 25px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 8px;
+  text-align: center;
+  clear: both;
+  border-right: 1px white;
+  }
+  .footer a{
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+  }
+  .footer-body{
+    background-color: rgb(155, 195, 211);
+    margin-top: 2%;
+  }
+  .click {
+    background-color:#333;
+    border: 0px solid#333;
+    color: white;
+    font-size: 16px;
+    margin: 3px;
+    float: left;
+  }
+  
+  .click:hover {
+    background-color: rgb(155, 195, 211);;
+  }

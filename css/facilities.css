@@ -1,0 +1,125 @@
+body{
+  margin: 0;
+  background-color: rgb(155,195,215);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border: 5px solid #333;
+ 
+}
+.row{
+  padding-top: 65px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.contact{
+  background-color: rgb(155, 195, 211);
+  height: 20px;
+  width: 98%;
+  padding: 15px;
+}
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 60px;
+  padding-left: 30px;
+}
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+}
+.topnav a:hover {
+  background-color:rgb(155, 195, 211);
+  color: black;
+}
+.icon{
+    float: right;
+}
+h2{
+  font-size: 150%;
+}
+  /* (A) GRID CONTAINER */
+  #grid-row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* NOTE: ROW 3 ONWARDS WILL BE AUTO HEIGHT */
+    grid-template-rows: 100px 100px 100px;
+    
+    /* SAME AS COLUMNS, WE CAN USE REPEAT AS WELL
+    grid-template-rows: repeat(4, 50px); */
+    }
+    
+    /* (B) GRID CELLS */
+    div.cell {
+    padding: 8px;
+    margin: 10px;
+    width: 40%;
+    height: 300%;
+    }
+    h3{
+    font-size: 20px;
+    }
+    .footer{
+    background-color: #333;
+    color: white;
+    height: 25px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 8px;
+    text-align: center;
+    clear: both;
+    border-right: 1px white;
+    }
+    .footer a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    }
+    .footer-body{
+      background-color: rgb(155, 195, 211);;
+    }.click {
+      background-color:#333;
+      border: 0px solid#333;
+      color: white;
+      font-size: 16px;
+      margin: 3px;
+      float: left;
+    }
+    
+    .click:hover {
+      background-color: rgb(155, 195, 211);;
+    }
+  
